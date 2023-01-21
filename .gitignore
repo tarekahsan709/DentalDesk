@@ -16,3 +16,5 @@ stats.json
 package.list
 src/secrets.ts
 cypress/integration/examples
+
+/package-lock.json

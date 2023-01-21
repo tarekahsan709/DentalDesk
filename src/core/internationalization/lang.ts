@@ -50,6 +50,15 @@ class Translate {
 				return (await import("./languages/de")).default;
 			},
 		},
+
+		{
+			localName: "Srpski",
+			code: "rs",
+			RTL: false,
+			loadTerms: async () => {
+				return (await import("./languages/rs")).default;
+			},
+		},
 	];
 
 	@observable terms: { [key: string]: string } = {};
