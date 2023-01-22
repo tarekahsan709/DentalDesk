@@ -1,0 +1,2 @@
+const dropboxAccessToken = "";
+export { dropboxAccessToken };
