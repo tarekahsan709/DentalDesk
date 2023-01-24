@@ -351,15 +351,15 @@ export const rs: typeof raw = {
 	 * table headings
 	 */
 
-	"orthodontic patient": "",
-	dose: "",
-	frequency: "",
-	form: "",
-	"staff member": "",
-	"contact details": "",
-	profits: "",
-	"expenses/unit": "",
-	"done appointments": "",
+	"orthodontic patient": "ortondonski pacijent",
+	dose: "doza",
+	frequency: "učestalost",
+	form: "forma",
+	"staff member": "osoblje",
+	"contact details": "kontakt detalji",
+	profits: "profiti",
+	"expenses/unit": "troškovi po jedinici",
+	"done appointments": "završeno zakazivanja",
 
 	/**
 	 * units of measurement
@@ -461,8 +461,8 @@ export const rs: typeof raw = {
 	 * statistics page
 	 */
 
-	"applied times": "",
-	"all staff members": "",
+	"applied times": "primenjeno puta",
+	"all staff members": "svo osoblje",
 
 	/**
 	 * treatments page
@@ -472,30 +472,29 @@ export const rs: typeof raw = {
 	/**
 	 * labworks pages
 	 */
-	labwork: "",
-	dates: "",
-	laboratory: "",
-	"case title": "",
-	lab: "",
-	"lab details": "",
-	"laboratory name": "",
-	"lab contact": "",
-	"no laboratory found": "",
-	sent: "",
-	"not sent": "",
-	"sent date": "",
-	received: "",
-	"not received": "",
-	"received date": "",
+	labwork: "laboratorija",
+	dates: "datumi",
+	laboratory: "laboratorija",
+	"case title": "naziv slučaja",
+	lab: "lab",
+	"lab details": "detalji laboratorije",
+	"laboratory name": "naziv laboratorije",
+	"lab contact": "kontakt laboratorije",
+	"no laboratory found": "laboratorija nije nađena",
+	sent: "poslato",
+	"not sent": "nije poslato",
+	"sent date": "poslato datuma",
+	received: "primljeno",
+	"not received": "nije primljeno",
+	"received date": "primljeno dana",
 
 	/**
 	 * message bars
 	 */
-	"no data in this section yet, you can add new data by clicking the button above":
-		"",
-	"did not find anything that matches your search criteria": "",
+	"no data in this section yet, you can add new data by clicking the button above": "nema podataka još u ovoj sekciji, dodajte nove podatke klikom na taster gore",
+	"did not find anything that matches your search criteria": "nije nađeno ništa što se poklapa sa vašom pretragom",
 	"you're offline. use the latest username/password you've successfully used on this machine to login to this server":
-		"",
+		"vi ste offline, koristite poslednji username i password koji ste uspešno koristili na ovoj mašini da se logujete na server",
 	"the case sheet of this patient does not show any problems that needs orthodontic treatment":
 		"",
 	"files server is offline, make sure you're online and connected": "",
@@ -532,19 +531,18 @@ export const rs: typeof raw = {
 	/**
 	 * prompts
 	 */
-	"all unsaved data will be lost. all data will be removed and replaced by the backup file":
-		"",
-	"please enter file name": "",
-	"please enter your pin": "",
-	"are you sure you want to delete this appointment?": "",
-	"orthodontic case will be deleted": "",
-	"all of the patient": "",
-	"'s data will be deleted along with": "",
-	"of appointments": "",
-	"are you sure you want to delete the prescription?": "",
-	"are you sure you want to delete": "",
-	"will be deleted": "",
-	"this visit data will be deleted along with all photos and notes": "",
+	"all unsaved data will be lost. all data will be removed and replaced by the backup file": "svi nesnimljeni podaci će biti izgubljeni. svi podaci će biti uklonjeni i zamenjeni sa bekap fajlom",
+	"please enter file name": "molimo unesite ime fajla",
+	"please enter your pin": "molimo unesite pin",
+	"are you sure you want to delete this appointment?": "jeste sigurni da želite da obrišete ovo zakazivanje?",
+	"orthodontic case will be deleted": "ortodonski slučaj će biti obrisan",
+	"all of the patient": "sve od pacijenta",
+	"'s data will be deleted along with": "podaci će biti obrisani zajedno",
+	"of appointments": "od zakaivanja",
+	"are you sure you want to delete the prescription?": "sigurni da želite obrisati recept",
+	"are you sure you want to delete": "sigurni da želite obrisati",
+	"will be deleted": "biće obrisan",
+	"this visit data will be deleted along with all photos and notes": "ova poseta će biti obrisana zajedno sa svim fotografijama i zabeleškama",
 
 	/**
 	 * messages
