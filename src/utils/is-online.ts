@@ -16,6 +16,7 @@ export async function checkServer(
 		xhr.timeout = 2500;
 		xhr.withCredentials = true;
 
+		utils.log("Check if it's online");
 		xhr.open("GET", server + `${"/_session"}`, true);
 		if (server === "https://sdb.apexo.app/status") {
 			xhr.setRequestHeader(
@@ -35,7 +36,7 @@ export async function checkServer(
 		try {
 			xhr.send(null);
 		} catch (exception) {
-			utils.log("IS-ONLINE: ", exception);
+			utils.log("IS-ONLINE ERROR: ", exception);
 			return resolve(false);
 		}
 	});

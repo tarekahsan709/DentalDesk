@@ -85,6 +85,7 @@ const communityLoginService = {
 		).default;
 		PouchDB.plugin(auth);
 		try {
+			utils.log("Check for active session");
 			if (status.isOnline.server && !status.keepServerOffline) {
 				return !!(
 					await new PouchDB(server, {
@@ -92,7 +93,7 @@ const communityLoginService = {
 					}).getSession()
 				).userCtx.name;
 			}
-		} catch (e) {}
+		} catch (e) { }
 		return false;
 	},
 
@@ -115,11 +116,23 @@ const communityLoginService = {
 			((await import("pouchdb-authentication")) as any);
 		PouchDB.plugin(auth);
 		try {
-			await new PouchDB(server, { skip_setup: true }).logIn(
+			utils.log("Trying to log-in");
+			let db = await new PouchDB(
+				server, {
+				skip_setup: true
+			}
+			).logIn(
 				username,
 				password
 			);
+			var session=new PouchDB(server, {
+				skip_setup: true,
+			}).getSession();
+			utils.log(session);
+			
+
 			if (noStart) {
+				utils.log("Log-in success, no server start");
 				return true;
 			}
 			store.set(
@@ -129,9 +142,11 @@ const communityLoginService = {
 			store.set("LSL_TS", new Date().getTime().toString());
 			status.loginType = LoginType.loginCredentialsOnline;
 			status.start({ server });
+			utils.log("Log-in success");
 			return true;
 		} catch (e) {
 			console.error(e);
+			utils.log("Log-in errror: " + e);
 			return ((e as any).reason as string) || "Could not login";
 		}
 	},
