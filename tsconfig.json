@@ -13,6 +13,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"newLine": "LF",
 		"noImplicitThis": true,
+                "allowSyntheticDefaultImports": true,
 		"pretty": true,
 		"strict": true,
 		"importHelpers": true,

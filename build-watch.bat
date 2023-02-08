@@ -1,5 +1,8 @@
 @echo off
 
+echo "Typescript watch"
+node_modules\.bin\tsc  --build tsconfig.json -watch
+
 rem app.js and index.html
 node_modules\.bin\webpack -p --env.production --mode production -w
 echo "WebPack completed successfully"
