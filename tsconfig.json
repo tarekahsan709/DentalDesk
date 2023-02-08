@@ -1,14 +1,14 @@
 {
 	"compilerOptions": {
 		"outDir": "./dist/",
-		"sourceMap": true,
-		"noImplicitAny": true,
+		//"sourceMap": true,
+		//"noImplicitAny": true,
 		"strictNullChecks": true,
 		"module": "esnext",
 		"moduleResolution": "node",
 		"target": "es6",
 		"jsx": "react",
-		"allowJs": true,
+		//"allowJs": true,
 		"experimentalDecorators": true,
 		"forceConsistentCasingInFileNames": true,
 		"newLine": "LF",
