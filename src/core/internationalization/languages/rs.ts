@@ -496,37 +496,37 @@ export const rs: typeof raw = {
 	"you're offline. use the latest username/password you've successfully used on this machine to login to this server":
 		"vi ste offline, koristite poslednji username i password koji ste uspešno koristili na ovoj mašini da se logujete na server",
 	"the case sheet of this patient does not show any problems that needs orthodontic treatment":
-		"",
-	"files server is offline, make sure you're online and connected": "",
+		"lista slučaja za ovog pacijenta ne pokazuje nikakve probleme za koje je potreban ortodonski tretman",
+	"files server is offline, make sure you're online and connected": "server je offline, budite sigurni da je online i povezan",
 	"this patient does not seem to have any problems or concerns, have you filled the case sheet?":
-		"",
-	"a treatment plan must be before starting the treatment": "",
-	"you can not access orthodontic records while offline": "",
-	"no visits recorded yet! add a new visit using the button below": "",
+		"ovaj pacijent nema nikakve probleme, da li ste popunili stavke sa slučajima vezanih za pacijenta",
+	"a treatment plan must be before starting the treatment": "plan tretmana mora biti pre zakazivanja tretmana",
+	"you can not access orthodontic records while offline": "ne možete pristupiti ortodonskim zapisima kada niste na vezi (offline ste)",
+	"no visits recorded yet! add a new visit using the button below": "nema još zabeleženih poseta! dodajte novu posetu koristeći taster ispod",
 	"this patient does not seem to have any photo record uploaded, press the plus sign button below to start uploading":
-		"",
-	"you can not access patient gallery while offline": "",
-	"this patient does not have any appointment": "",
+		"ovaj pacijent nema ni jednu fotografiju, pritisnite na plus znak da je namestite",
+	"you can not access patient gallery while offline": "ne možete pristupiti galeriji pacijenta kada niste na vezi (offline ste)",
+	"this patient does not have any appointment": "ovaj pacijent nema zakazivanja",
 	"backup and restore functionality are not available while you're offline":
-		"",
-	"choose the main language of display menus and items": "",
-	"set the date format to be used across this application": "",
+		"bekap i vraćanje nisu dopstupni kada niste na vezi (niste online)",
+	"choose the main language of display menus and items": "odaberite glavni jezik za prikaz menija i stavki",
+	"set the date format to be used across this application": "namestite format datuma koji će se koristiti u aplikaciji",
 	"this access token is used to store files across the application, like backups and images":
-		"",
+		"ovaj token za pristup je korišćen da sačuva sve fajlove koje aplikacija koristi, kao što su bekap i slike",
 	// tslint:disable-next-line:max-line-length
 	"when time tracking enabled, this is used to calculate profits and expenses, as time is also added to the expenses so here you can put the electricity, rent, and other time dependent expenses":
-		"",
-	"this symbol you enter here will be used across your application": "",
-	"only you can edit this pin, and it can only be 4 numbers": "",
-	"you can't edit your own level and permissions": "",
-	"there are no upcoming appointments for this staff member": "",
-	"might not be available on this day": "",
-	"price is too low": "",
+		"kada je beleženje vremena uključeno, ovo služi da kalkuliše profit i troškove, vreme je takođe dodato na troškove pa možete ovde uneti i ostalo kao što je struja, iznajmljivanje prostorije i ostale troškove",
+	"this symbol you enter here will be used across your application": "simbol koji unesete ovde biće korišćen preko cele aplikacije",
+	"only you can edit this pin, and it can only be 4 numbers": "samo vi možete izmeniti ovaj pin i može biti samo 4 broja",
+	"you can't edit your own level and permissions": "ne možete promeniti svoj nivo i prava",
+	"there are no upcoming appointments for this staff member": "nema predstojećeih zakazivanja za ovog člana",
+	"might not be available on this day": "možda neće biti dostupno na ovaj dan",
+	"price is too low": "cena je preniska",
 	"you need to add treatments in the treatments section before being able to book new appointments":
-		"",
-	"click a thumbnail to expand it": "",
+		"Treba da dodate tretmane u sekciji tretmana pre nego što budete mogli da bukirate novo zakazivanje",
+	"click a thumbnail to expand it": "Kliknite na sličicu da je proširite",
 	"you can download a backup from below and use this button to restore it":
-		"",
+		"Možete skinuti bekap i koristiti ovaj taster da ga vratite nazad",
 
 	/**
 	 * prompts
@@ -537,7 +537,7 @@ export const rs: typeof raw = {
 	"are you sure you want to delete this appointment?": "jeste sigurni da želite da obrišete ovo zakazivanje?",
 	"orthodontic case will be deleted": "ortodonski slučaj će biti obrisan",
 	"all of the patient": "sve od pacijenta",
-	"'s data will be deleted along with": "podaci će biti obrisani zajedno",
+	"'s data will be deleted along with": "podaci će zajedno biti obrisani",
 	"of appointments": "od zakaivanja",
 	"are you sure you want to delete the prescription?": "sigurni da želite obrisati recept",
 	"are you sure you want to delete": "sigurni da želite obrisati",
