@@ -42,7 +42,7 @@ module.exports = {
 	entry: "./src/app.tsx",
 	output: {
 		filename: "app.js",
-		path: __dirname + "/dist/application",
+		path: __dirname + "/dist/",
 	},
 	resolve: {
 		extensions: [".ts", ".tsx", ".js", ".json", ".css", ".scss"],
