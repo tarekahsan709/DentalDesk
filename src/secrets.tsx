@@ -1,2 +1,0 @@
-const dropboxAccessToken = "";
-export { dropboxAccessToken };

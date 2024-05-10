@@ -1,1 +1,0 @@
-export const statsNamespace = "statistics";
