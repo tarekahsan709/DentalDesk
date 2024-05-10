@@ -29,6 +29,7 @@ var processHTML = {
 				encoding: "utf8",
 			});
 			fs.writeFileSync(
+				"./dist/index.html",
 				HTMLFile.replace("/*ASSETS_PLACEHOLDER*/", assets)
 			);
 		});
