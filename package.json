@@ -26,7 +26,8 @@
 		"sjcl": "^1.0.8",
 		"transform-pouch": "^1.1.5",
 		"ts-md5": "^1.2.7",
-		"tslib": "^1.10.0"
+		"tslib": "^1.10.0",
+		"yarn": "^1.22.22"
 	},
 	"devDependencies": {
 		"@types/sjcl": "^1.0.29",

@@ -5,9 +5,9 @@ describe("@core: internationalization", () => {
 		expect(translate.loadedCode).toBe("en");
 	});
 	it("Setting another language", async (done) => {
-		setting!.setSetting("lang", "ar");
+		setting!.setSetting("lang", "bn");
 		setTimeout(() => {
-			expect(translate.loadedCode).toBe("ar");
+			expect(translate.loadedCode).toBe("bn");
 			done();
 		}, 500);
 	});

@@ -16,6 +16,9 @@ stats.json
 package.list
 src/secrets.ts
 cypress/integration/examples
-
+/dist/*
 /package-lock.json
 /nbproject
+
+#IDE or Editor
+.idea/

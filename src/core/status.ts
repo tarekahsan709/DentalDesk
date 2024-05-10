@@ -51,6 +51,8 @@ export class Status {
 	}
 
 	async initialCheck(server: string) {
+		console.log('Initial check....');
+
 		this.initialLoadingIndicatorText = "running initial check";
 		// If we're on a demo host
 		if (demoHosts.indexOf(location.host) !== -1) {

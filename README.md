@@ -5,7 +5,7 @@
 After cloning the repository, run `yarn install`, this will install the required dependencies. then run `yarn run prod` to build for production, or `yarn run dev` to build for development.
 
 ### Scripts
-
+- Use nodejs version 11 or 12
 -   `yarn run prod`: build for production.
 -   `yarn run dev`: build for development.
 -   `yarn run lint`: run ts-lint on the project.

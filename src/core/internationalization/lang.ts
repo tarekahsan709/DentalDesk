@@ -18,45 +18,11 @@ class Translate {
 			},
 		},
 		{
-			localName: "عربي",
-			code: "ar",
-			RTL: true,
-			loadTerms: async () => {
-				return (await import("./languages/ar")).default;
-			},
-		},
-		{
-			localName: "Espanol",
-			code: "es",
+			localName: "Bangla",
+			code: "bn",
 			RTL: false,
 			loadTerms: async () => {
-				return (await import("./languages/es")).default;
-			},
-		},
-		{
-			localName: "中文",
-			code: "zh-cn",
-			RTL: false,
-			loadTerms: async () => {
-				return (await import("./languages/zh-cn")).default;
-			},
-		},
-
-		{
-			localName: "Deutsche",
-			code: "de",
-			RTL: false,
-			loadTerms: async () => {
-				return (await import("./languages/de")).default;
-			},
-		},
-
-		{
-			localName: "Srpski",
-			code: "rs",
-			RTL: false,
-			loadTerms: async () => {
-				return (await import("./languages/rs")).default;
+				return (await import("./languages/bn")).default;
 			},
 		},
 	];
