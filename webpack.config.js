@@ -43,7 +43,7 @@ module.exports = {
 	output: {
 		filename: "app.js",
 		path: __dirname + "/dist/",
-		publicPath: '/DentalDesk'
+		publicPath: '/DentalDesk/'
 	},
 	resolve: {
 		extensions: [".ts", ".tsx", ".js", ".json", ".css", ".scss"],
