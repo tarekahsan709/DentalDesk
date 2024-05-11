@@ -24,24 +24,17 @@ var processHTML = {
 		compiler.hooks.afterEmit.tap("AfterEmitPlugin", (compilation) => {
 			const assets = JSON.stringify(
 				Object.keys(compilation.assets).concat(nonJSAssets)
-			).replace(/\[|\]/g, "").split(",").map(asset => `/DentalDesk/${asset}`).join(",");
-
-			let HTMLFile = fs.readFileSync("./src/index.html", {
+			).replace(/\[|\]/g, "");
+			const HTMLFile = fs.readFileSync("./src/index.html", {
 				encoding: "utf8",
 			});
-
-			// Replace the placeholder with correct assets path
-			HTMLFile = HTMLFile.replace("/*ASSETS_PLACEHOLDER*/", assets);
-
-			// Correctly prefix all asset paths
-			HTMLFile = HTMLFile.replace(/href="([^"]+)"/g, 'href="/DentalDesk/$1"');
-			HTMLFile = HTMLFile.replace(/src="([^"]+)"/g, 'src="/DentalDesk/$1"');
-
-			fs.writeFileSync("./dist/index.html", HTMLFile);
+			fs.writeFileSync(
+				"./dist/index.html",
+				HTMLFile.replace("/*ASSETS_PLACEHOLDER*/", assets)
+			);
 		});
 	},
 };
-
 
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
