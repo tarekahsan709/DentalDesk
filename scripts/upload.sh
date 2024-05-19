@@ -1,4 +1,4 @@
-# upload web application
+# upload web application, still old config with application as the folder
 cd dist/application &&
 git add . &&
 git commit -m "deploy" &&

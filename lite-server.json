@@ -1,8 +1,8 @@
 {
 	"port": 8000,
-	"files": ["./dist/application/**/*.{html,htm,css,js}"],
+	"files": ["./dist/**/*.{html,htm,css,js}"],
 	"server": {
-		"baseDir": "./dist/application"
+		"baseDir": "./dist"
 	},
 	"ghostMode": false
 }
