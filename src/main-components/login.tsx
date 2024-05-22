@@ -126,18 +126,18 @@ export class LoginView extends React.Component {
                                         </MessageBar>
                                     </div>
 
-                                    <div>
-                                        <TextField
-                                            name="server"
-                                            label={text(`server location`).c}
-                                            value={this.serverFieldValue}
-                                            disabled={this.disableInputs}
-                                            onChange={(ev, v) =>
-                                                (this.serverFieldValue = v!)
-                                            }
-                                            className="input-server"
-                                        />
-                                    </div>
+                                    {/*<div>*/}
+                                    {/*    <TextField*/}
+                                    {/*        name="server"*/}
+                                    {/*        label={text(`server location`).c}*/}
+                                    {/*        value={this.serverFieldValue}*/}
+                                    {/*        disabled={this.disableInputs}*/}
+                                    {/*        onChange={(ev, v) =>*/}
+                                    {/*            (this.serverFieldValue = v!)*/}
+                                    {/*        }*/}
+                                    {/*        className="input-server"*/}
+                                    {/*    />*/}
+                                    {/*</div>*/}
 
                                     <TextField
                                         name="identification"
