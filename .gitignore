@@ -11,7 +11,6 @@ yarn-error.log*
 debug.log
 
 # application specific
-dist/
 dist/desktop-builds
 stats.json
 package.list
