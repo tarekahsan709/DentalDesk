@@ -21,7 +21,7 @@ export const registerSettings = async () => {
 		modules.setting!.setSetting("hourlyRate", "50");
 	}
 	if (!modules.setting!.getSetting("currencySymbol")) {
-		modules.setting!.setSetting("currencySymbol", "$");
+		modules.setting!.setSetting("currencySymbol", "Tk");
 	}
 
 	core.router.register({

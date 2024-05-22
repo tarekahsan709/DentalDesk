@@ -15,7 +15,7 @@ class Version extends React.Component {
 	render() {
 		return (
 			<div className="ver">
-				apexo
+				Dental Desk
 				<br />{" "}
 				<span>
 					--VERSION--{core.status.version.charAt(0).toUpperCase()}
