@@ -1,8 +1,8 @@
 var webpack = require("webpack");
+var production = process.argv.find((x) => x === "-p");
 var fs = require("fs");
 var StringReplacePlugin = require("string-replace-webpack-plugin");
 var appVersion = require("./package.json").version;
-var TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 var nonJSAssets = [
     "style.css",
@@ -36,6 +36,8 @@ var processHTML = {
     },
 };
 
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
+
 module.exports = {
     entry: "./src/app.tsx",
     output: {
@@ -46,8 +48,13 @@ module.exports = {
         extensions: [".ts", ".tsx", ".js", ".json", ".css", ".scss"],
         plugins: [new TsconfigPathsPlugin({})],
     },
-    mode: "development",
-    devtool: "inline-source-map",  // Enhances debugging by mapping compiled code back to original source code.
+    externals: {
+        moment: "moment",
+        fs: "fs",
+        path: "path",
+        crypto: "crypto",
+    },
+    mode: production ? "production" : "development",
     module: {
         rules: [
             {
@@ -71,20 +78,34 @@ module.exports = {
             },
         ],
     },
+
     performance: {
         hints: false,
         maxEntrypointSize: 512000,
         maxAssetSize: 512000
     },
-    plugins: [
-        processHTML,
-        new StringReplacePlugin(),
-        new webpack.HotModuleReplacementPlugin(),  // Enables hot module replacement if applicable.
-    ],
+
+    plugins: production
+        ? [
+            processHTML,
+            new webpack.DefinePlugin({
+                "process.env.NODE_ENV": JSON.stringify("production"),
+            }),
+            new StringReplacePlugin(),
+            new webpack.optimize.LimitChunkCountPlugin({
+                maxChunks: 5,
+            }),
+        ]
+        : [
+            processHTML,
+            new StringReplacePlugin(),
+            new webpack.optimize.LimitChunkCountPlugin({
+                maxChunks: 5,
+            }),
+        ],
     devServer: {
         contentBase: './dist',
-        hot: true,  // Enables webpack's Hot Module Replacement feature.
+        hot: true,
         compress: true,
-        port: 8080,  // Default development port, change if necessary.
     },
 };
