@@ -1,21 +1,20 @@
-import { loginService, status, text } from "@core";
 import * as core from "@core";
-import { second, store } from "@utils";
-import { computed, observable } from "mobx";
+import { loginService, status, text } from "@core";
+import { store } from "@utils";
+import { observable } from "mobx";
 import { observer } from "mobx-react";
-import { Link, PivotItem } from "office-ui-fabric-react";
-import * as React from "react";
 import {
     DefaultButton,
     MessageBar,
     MessageBarType,
+    Pivot,
+    PivotItem,
     PrimaryButton,
     Spinner,
     SpinnerSize,
-    TextField,
-    Pivot,
-    Icon,
+    TextField
 } from "office-ui-fabric-react";
+import * as React from "react";
 
 @observer
 export class LoginView extends React.Component {
@@ -126,18 +125,18 @@ export class LoginView extends React.Component {
                                         </MessageBar>
                                     </div>
 
-                                    {/*<div>*/}
-                                    {/*    <TextField*/}
-                                    {/*        name="server"*/}
-                                    {/*        label={text(`server location`).c}*/}
-                                    {/*        value={this.serverFieldValue}*/}
-                                    {/*        disabled={this.disableInputs}*/}
-                                    {/*        onChange={(ev, v) =>*/}
-                                    {/*            (this.serverFieldValue = v!)*/}
-                                    {/*        }*/}
-                                    {/*        className="input-server"*/}
-                                    {/*    />*/}
-                                    {/*</div>*/}
+                                    <div>
+                                        <TextField
+                                            name="server"
+                                            label={text(`server location`).c}
+                                            value={this.serverFieldValue}
+                                            disabled={this.disableInputs}
+                                            onChange={(ev, v) =>
+                                                (this.serverFieldValue = v!)
+                                            }
+                                            className="input-server"
+                                        />
+                                    </div>
 
                                     <TextField
                                         name="identification"
